@@ -22,13 +22,13 @@ function enviar()
     payload = 
     {
         "numero_destino" : document.getElementById("B").value,
-        "dados":
+        "dados": 
         [
             {
-                "acao" : "audio",
-                "acao_dados" : 
+                "acao": 'audio',
+                "acao_dados": 
                 {
-                    "audio_url" : "http://prtnsrc.com/2545.mp3"
+                    "url_audio": 'https://github.com/haskellcamargo/gemidao-do-zap/raw/master/resources/gemidao.mp3'
                 }
             }
         ],
