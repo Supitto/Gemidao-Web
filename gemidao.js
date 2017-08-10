@@ -18,7 +18,7 @@ function enviar()
     }
     request.open("POST", "https://api2.totalvoice.com.br/composto");
     request.setRequestHeader("Content-Type", "application/json");
-    request.setRequestHeader("Access-Token", document.getElementById("Key").value);
+    request.setRequestHeader("Access-Token", document.getElementById("Key").value.replace(/\s/g,''));
     payload = 
     {
         "numero_destino" : document.getElementById("B").value,
