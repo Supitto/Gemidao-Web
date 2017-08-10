@@ -12,7 +12,7 @@
     <p> Aqui você pode enviar anonimamente gemidões para a galera</p>
     <h2> Primeiro passo - Obtendo a chave </h1>
     <p> Crie uma conta nesse site <a href="http://www.totalvoice.com.br/">http://www.totalvoice.com.br/</a> (não custa nada) <br/>
-        Depois acesse esse link -> <a href="https://api2.totalvoice.com.br/painel/">https://api2.totalvoice.com.br/painel/</a> e copie sua chave</p>
+        Depois acesse esse link -> <a href="https://api2.totalvoice.com.br/painel/">https://api2.totalvoice.com.br/painel/</a> e copie seu Access-Token</p>
     <h2> Segundo passo - Escolhendo as vitimas </h1>
     <form>
         <p> Insira o numero do telefone de quem vai receber a ligação : </p>
@@ -21,10 +21,10 @@
         <p> Agora insira o numero do telefone de quem vai enviar a ligação (pra ninguem saber que foi você) : </p>
         <p> (Formato DDD + Número exemplo: 4832830151)</p>
         <input id="A"/>
-        <p> Por fim, insira a chave que você coseguiu no primeiro passo</p>
+        <p> Por fim, insira o Access-Token que você coseguiu no primeiro passo (deve ser identico, cuidado com os espaços) :</p>
         <input id="Key"/>
         <p> Agora é so clicar no botão abaixo e esperar a pessoa ficar brava :)</p>
-        <button type="button" onclick="enviar(document.getElementById('A').value,document.getElementById('B').value,document.getElementById('Key').value)">Enviar</button>
+        <button type="button" onclick="enviar()">Enviar</button>
     </form>
     <br/>
     <h3> Disclaimer </h3>
